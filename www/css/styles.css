@@ -65,6 +65,72 @@ img{
   font-weight: bold;
   color: #333;
 }
+.goods .top{
+  color: red;
+  text-align: right;
+}
+.goods .title{
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+.goods .price{
+
+}
+.goods .price span{
+  font-weight: bold;
+}
+.goods .buy-box{
+  display: flex;
+}
+
+.goods__top{
+  color: red;
+  text-align: right;
+}
+.goods__title{
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+.goods__price{
+
+}
+.goods__price span{
+  font-weight: bold;
+}
+.goods__buy-box{
+  display: flex;
+}
+/*
+  властивості - position
+  - staic - по замовчуваню, це елемент без позиціювання (нічого не працює)
+  - relative - елемент залишається на свому місці, 
+    але можна посунути візуально блок
+  - absolute - вибиває елемент з потоку
+   і позиціонує його відносно першого батьківського елемента
+   з позиціюванням не static
+   - fixed -  вибиває елемент з потоку та позиціонує його відносно вікна переглядача
+
+   top, bottom, left, right, z-index;
+*/
+.author{
+  position: relative;
+  padding: 20px;
+  box-shadow: 0 0 10px 0 #333;
+  min-height: 120px;
+  margin: 20px 0;
+}
+.author__avatar{
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  width: 80px;
+}
+.author__avatar img{
+  max-height: 80px;
+}
+.author__info{
+  padding-left: 100px; 
+}
  /*медіазапит CSS*/
  /*@media - ключове слово*/
  /* ( тут пишем правило спрацювання )*/
