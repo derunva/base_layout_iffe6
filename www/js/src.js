@@ -16,3 +16,14 @@ menu_opener.addEventListener('click', function(){
     menu.classList.add("active");
   }
 })
+document.querySelector('css selector')
+document.querySelectorAll('css selector')
+jQuery('css selector')
+
+$('#menu-opener').on('click', function(){
+  if($('#menu-opener').is('.active')){
+    $('#menu-opener,#menu').removeClass('active')
+  }else{
+    $('#menu-opener,#menu').addClass('active')
+  }
+})
