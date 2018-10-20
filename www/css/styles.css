@@ -78,6 +78,28 @@ h1,h2,h3,h4,h5,h6{
   transform: translateX(-50%) translateY(-50%);
   margin: 0;
 }
+.tabs__item{
+  display: none;
+}
+.tabs__item.active{
+  display: block;
+}
+.tabs__nav a.active{
+  color: red;
+}
+.breadcrumbs{
+  margin-bottom: 15px;
+  color: #4e4e4e;
+}
+.breadcrumbs a{
+  color: inherit;
+}
+.breadcrumbs span{
+  color: #3f4e86;
+}
+.breadcrumbs li{
+  display: inline-block;
+}
 .menu-opener.active .burger span:nth-child(3){
   background: none;
   height: 38px;
