@@ -30,6 +30,17 @@ tabNavItems.forEach(
       console.log(event)
       console.log(this)
       console.log(this.dataset.tab)
+      var tabName = this.dataset.tab;
+      tabNavItems.forEach(
+        function(item){
+          item.classList.remove("active");
+        }
+      )
+      this.classList.add('active');
+      var currentItem = document.querySelector(
+        '.tabs__content [data-tab="'+tabName+'"]'
+      )
+      console.log(currentItem)
     })
   }
 )
